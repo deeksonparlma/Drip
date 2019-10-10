@@ -60,7 +60,9 @@ $(document).ready(function(){
           order.push("sh" + price);
         }
       }
-      window.open('mailto : dickson.nyaigoti@gmail.com ?subject=DripSchool Shoe Order & body = I have purchased +'+ shoetype.toString() +" "+' shoes worth ' +" "+(price) + '\r\n' );
-      price = 0;
+      if (increment != 0) {
+        window.open('mailto : dickson.nyaigoti@gmail.com ?subject=DripSchool Shoe Order & body = I have purchased +'+ shoetype.toString() +" "+' shoes worth ' +" "+(price) + '\r\n' );
+        price = 0;
+      }
   });
 });
