@@ -3,11 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.btn{
-  position: fixed;
-  top: 90%;
-  right: 0%;
-}
+
 @media only screen and (min-width:525px){
   .nav{
     position: fixed;
@@ -86,7 +82,12 @@
   }
   .logo{
     font-size: 12px;
-    /* display: none; */
+    display: none;
+  }
+  .btn{
+    position: fixed;
+    bottom: 0;
+    right: 0%;
   }
 }
 @media only screen and (max-width:525px){
@@ -171,5 +172,10 @@
   }
   .active{
     background-color: grey;
+  }
+  .btn{
+    position: fixed;
+    right: 0%;
+    bottom: 0;
   }
 }
