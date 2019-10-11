@@ -63,6 +63,7 @@ $(document).ready(function(){
       if (increment != 0) {
         window.location.href ='mailto: dickson.nyaigoti@gmail.com ?subject=DripSchool Shoe Order &body=I have purchased'+ " "+shoetype.toString() +" "+"shoes worth "+ " "+"Ksh"+". "+price;
         price = 0;
+        shoetype.length= 0;
       }
   });
 });
