@@ -95,6 +95,12 @@
     bottom: 0;
     right: 0%;
   }
+  .location{
+    position: fixed;
+    bottom: 0;
+    right: 15%;
+    width: 50%;
+  }
 }
 @media only screen and (max-width:525px){
   .nav{
@@ -192,5 +198,11 @@
   }
   .c{
     width: 800px;
+  }
+  .location{
+    position: fixed;
+    bottom: 0;
+    right: 20%;
+    width: 50%;
   }
 }
