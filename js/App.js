@@ -54,12 +54,12 @@ $(document).ready(function(){
     totalValues=[];
     totalValues.length=0;
 
-      for (var i = 0; i < items.length; i++) {
-        if (items[i] == values[i]) {
+      for (var n = 0; n < items.length; n++) {
+        if (items[n] == values[n]) {
           increment +=1;
           document.getElementById("cartNo").innerHTML=increment;
           // items[i]
-          r=shoetype.push(quanity[i]+ " - "+type[i]);
+          r=shoetype.push(quanity[n]+ " - "+type[n]);
           t= totalValues.push(parseInt(values));
           z=order.push(parseInt(values));
         }
@@ -83,14 +83,14 @@ $(document).ready(function(){
   //shoe order//
   $("#watches").submit(function(event){
     event.preventDefault();
-    var watch_1=$("input[name=shoe1]:checked").val();
-    var watch_2=$("input[name=shoe2]:checked").val();
-    var watch_3=$("input[name=shoe3]:checked").val();
-    var watch_4=$("input[name=shoe4]:checked").val();
-    var watch_5=$("input[name=shoe5]:checked").val();
-    var watch_6=$("input[name=shoe6]:checked").val();
-    var watch_7=$("input[name=shoe7]:checked").val();
-    var watch_8=$("input[name=shoe8]:checked").val();
+    var watch_1=$("input[name=watch1]:checked").val();
+    var watch_2=$("input[name=watch2]:checked").val();
+    var watch_3=$("input[name=watch3]:checked").val();
+    var watch_4=$("input[name=watch4]:checked").val();
+    var watch_5=$("input[name=watch5]:checked").val();
+    var watch_6=$("input[name=watch6]:checked").val();
+    var watch_7=$("input[name=watch7]:checked").val();
+    var watch_8=$("input[name=watch8]:checked").val();
 
     var q11 =document.getElementById('quantity11').value;
     var q12 =document.getElementById('quantity12').value;
@@ -102,6 +102,7 @@ $(document).ready(function(){
     var q18 =document.getElementById('quantity18').value;
 
     items=[watch_1,watch_2,watch_3,watch_4,watch_5,watch_6,watch_7,watch_8,];
+    type =["Ongine black","Gucci golden face","Gucci mate black","Red wrist watch","Blue wrist watch","Mateblack-hectagon-face wrist watch","Purple-hectagon-face wrist watch","Cream-white-hectagon-face wrist watch"]
     quanity=[q11,q12,q13,q14,q15,q16,q17,q18];
     values =[350,350,350,350,350,350,350,350];
     totalValues=[];
