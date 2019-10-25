@@ -62,7 +62,7 @@ $(document).ready(function(){
 
     //shoes/
     items=[_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,watch_1,watch_2,watch_3,watch_4,watch_5,watch_6,watch_7,watch_8,];
-    quanity=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20];
+    quantity=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20];
     values =[2500,3500,2500,3000,2500,4500,4500,4500,3500,3500,2500,4500,350,350,350,350,350,350,350,350];
     type=["green Air Max","Green-700s","Green-White Airmax 3","Black Nike","Yellow-Blue Airmax","Red Spring blades","Yellow FIla","White FIla","Blue Sneakers","Black Spring Blades","Brown official","Yellow Fila", "Ongine black","Gucci golden face","Gucci mate black","Red wrist watch","Blue wrist watch","Mateblack-hectagon-face wrist watch","Purple-hectagon-face wrist watch","Cream-white-hectagon-face wrist watch"];
     totalValues=[];
@@ -75,20 +75,23 @@ $(document).ready(function(){
         if (items[n] == values[n]) {
           increment +=1;
           document.getElementById("cartNo").innerHTML=increment;
-          r=orderType.push(quanity[n]+ " - "+type[n]);
+          r=orderType.push(quantity[n]+ " -"+type[n]);
           t= totalValues.push(parseInt(values));
           z=order.push(parseInt(values));
         }
       }
 
-      for (var j = 0; j <= 11; j++) {
-        if (values[j]== items[j]) {
-          price += parseInt(values[j]*quanity[j]);
+      for (var j = 0; j <= 19; j++) {
+        if (values[j] == items[j]) {
+          price += parseInt(values[j]*quantity[j]);
           order.push("sh" + price);
         }
       }
+
       if (increment != 0) {
-        window.location.href ='mailto: dickson.nyaigoti@gmail.com ?subject=DripSchool Order &body=I have purchased'+ " "+orderType.toString() +" "+"worth "+ " "+"Ksh"+". "+price;
+        var message = orderType.toString() +" "+"worth "+ " "+"Ksh"+". "+price;
+        console.log(message);
+        window.location.href ='mailto: dickson.nyaigoti@gmail.com ?subject=DripSchool Order &body=I have purchased'+ message;
         price = 0;
         orderType.length= 0;
         increment = 0;
