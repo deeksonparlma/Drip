@@ -1,9 +1,22 @@
 $(document).ready(function(){
   var order=[];
+  var order2=[];
   var price=0;
   var increment = 0;
   var shoetype=[];
+  var increment2 = 0;
+  var watchtype=[];
+  var watchPrice = 0;
 
+  $("#watchDisplay").click(function(){
+    $("#shoesz").hide();
+    $("#watches").show();
+  });
+
+  $("#shoesDisplay").click(function(){
+    $("#shoesz").show();
+    $("#watches").hide();
+  });
 
   // alert("work");
   $("#shoesz").submit(function(event){
@@ -46,7 +59,7 @@ $(document).ready(function(){
           increment +=1;
           document.getElementById("cartNo").innerHTML=increment;
           // items[i]
-          r=shoetype.push(quanity[i]+ " - "+type [i]);
+          r=shoetype.push(quanity[i]+ " - "+type[i]);
           t= totalValues.push(parseInt(values));
           z=order.push(parseInt(values));
         }
@@ -65,5 +78,56 @@ $(document).ready(function(){
         price = 0;
         shoetype.length= 0;
       }
+  });
+
+  //shoe order//
+  $("#watches").submit(function(event){
+    event.preventDefault();
+    var watch_1=$("input[name=shoe1]:checked").val();
+    var watch_2=$("input[name=shoe2]:checked").val();
+    var watch_3=$("input[name=shoe3]:checked").val();
+    var watch_4=$("input[name=shoe4]:checked").val();
+    var watch_5=$("input[name=shoe5]:checked").val();
+    var watch_6=$("input[name=shoe6]:checked").val();
+    var watch_7=$("input[name=shoe7]:checked").val();
+    var watch_8=$("input[name=shoe8]:checked").val();
+
+    var q11 =document.getElementById('quantity11').value;
+    var q12 =document.getElementById('quantity12').value;
+    var q13 =document.getElementById('quantity13').value;
+    var q14 =document.getElementById('quantity14').value;
+    var q15 =document.getElementById('quantity15').value;
+    var q16 =document.getElementById('quantity16').value;
+    var q17 =document.getElementById('quantity17').value;
+    var q18 =document.getElementById('quantity18').value;
+
+    items=[watch_1,watch_2,watch_3,watch_4,watch_5,watch_6,watch_7,watch_8,];
+    quanity=[q11,q12,q13,q14,q15,q16,q17,q18];
+    values =[350,350,350,350,350,350,350,350];
+    totalValues=[];
+    totalValues.length=0;
+
+    for (var i = 0; i < items.length; i++) {
+      if (items[i] == values[i]) {
+        increment2 +=1;
+        document.getElementById("cartNo").innerHTML=increment2;
+        // items[i]
+        r=watchtype.push(quanity[i]+ " - "+type[i]);
+        t= totalValues.push(parseInt(values));
+        z=order2.push(parseInt(values));
+      }
+    }
+
+    for (var k = 0; k <= 11; k++) {
+      if (values[k]== items[k]) {
+        watchPrice += parseInt(values[k]*quanity[k]);
+        order2.push("sh" + watchPrice);
+      }
+    }
+    if (increment != 0) {
+      window.location.href ='mailto: dickson.nyaigoti@gmail.com ?subject=DripSchool Watch Order &body=I have purchased'+ " "+watchtype.toString() +" "+"Watch(es) worth "+ " "+"Ksh"+". "+watchPrice;
+      watchPrice = 0;
+      watchtype.length= 0;
+    }
   });
 });

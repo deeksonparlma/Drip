@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+#watches{
+  display: none;
+}
 @media only screen and (min-width:525px){
   .nav{
     position: fixed;
@@ -59,6 +61,10 @@
   .ccImage{
     height: 100px;
     margin: 10px 0px 10% 50px;
+  }
+  .ccImagee{
+    height: 350px;
+    margin: 10px 0px 10% 70px;
   }
   .price{
     margin-top: 50px;
@@ -145,6 +151,10 @@
   .ccImage{
     height: 100px;
     margin: 10px 0px 10% 50px;
+  }
+  .ccImagee{
+    height: 300px;
+    margin: 10px 0px 10% 100px;
   }
   .price{
     margin-top: 50px;
