@@ -101,6 +101,7 @@
     position: fixed;
     width: 100%;
     z-index: 2;
+
     background-color: white;
   }
   .bar{
@@ -144,6 +145,7 @@
   .cc{
     margin: 4px;
     /* background-color: grey; */
+    width: 100%;
     box-shadow: 1px 1px 3px 0px black;
     border-radius: 10px;
   }
@@ -187,5 +189,8 @@
     position: fixed;
     right: 0%;
     bottom: 0;
+  }
+  .c{
+    width: 800px;
   }
 }
