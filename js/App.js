@@ -4,6 +4,7 @@ $(document).ready(function(){
   var increment = 0;
   var orderType=[];
 
+
   $("#watchDisplay").click(function(){
     $(".4").hide();
     $("#watches").show();
@@ -17,6 +18,9 @@ $(document).ready(function(){
   // alert("work");
   $("#shoeszz").submit(function(event){
     event.preventDefault();
+    var l = document.getElementById("location");
+    var location = l.options[l.selectedIndex].value;
+
     var _1=$("input[name=shoe1]:checked").val();
     var _2=$("input[name=shoe2]:checked").val();
     var _3=$("input[name=shoe3]:checked").val();
@@ -87,11 +91,15 @@ $(document).ready(function(){
           order.push("sh" + price);
         }
       }
-
-      if (increment != 0) {
-        var message = orderType.toString() +" "+"worth "+ " "+"Ksh"+". "+price;
+      if (location == 'null') {
+        alert("Please enter delivery location");
+      }
+      else if (increment != 0 && location != 'null') {
+        var message = orderType.toString() +" "+"worth "+ " "+"Ksh"+". "+price +" "+ "to be delivered at"+" " +location;
         console.log(message);
-        window.location.href ='mailto: javanmega0@gmail.com,dickson.nyaigoti@gmail.com ?subject=DripSchool Order &body=I have purchased'+ message;
+        // alert(message);
+        window.location.href='https://wa.me/25740392957/?text='+message;
+        // window.location.href ='mailto: javanmega0@gmail.com , dickson.nyaigoti@gmail.com ?subject=DripSchool Order &body=I have purchased'+ message;
         price = 0;
         orderType.length= 0;
         increment = 0;
