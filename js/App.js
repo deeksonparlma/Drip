@@ -91,7 +91,7 @@ $(document).ready(function(){
       if (increment != 0) {
         var message = orderType.toString() +" "+"worth "+ " "+"Ksh"+". "+price;
         console.log(message);
-        window.location.href ='mailto: dickson.nyaigoti@gmail.com ?subject=DripSchool Order &body=I have purchased'+ message;
+        window.location.href ='mailto: javanmega0@gmail.com,dickson.nyaigoti@gmail.com ?subject=DripSchool Order &body=I have purchased'+ message;
         price = 0;
         orderType.length= 0;
         increment = 0;
