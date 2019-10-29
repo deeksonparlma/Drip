@@ -67,7 +67,7 @@ $(document).ready(function(){
     //shoes/
     items=[_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,watch_1,watch_2,watch_3,watch_4,watch_5,watch_6,watch_7,watch_8,];
     quantity=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20];
-    values =[2500,3500,2500,3000,2500,4500,4500,4500,3500,3500,2500,4500,350,350,350,350,350,350,350,350];
+    values =[2500,3500,2500,3000,2500,4500,4500,4500,3500,3500,2500,4500,300,300,300,300,300,300,300,300];
     type=["green Air Max","Green-700s","Green-White Airmax 3","Black Nike","Yellow-Blue Airmax","Red Spring blades","Yellow FIla","White FIla","Blue Sneakers","Black Spring Blades","Brown official","Yellow Fila", "Ongine black","Gucci golden face","Gucci mate black","Red wrist watch","Blue wrist watch","Mateblack-hectagon-face wrist watch","Purple-hectagon-face wrist watch","Cream-white-hectagon-face wrist watch"];
     totalValues=[];
     totalValues.length=0;
