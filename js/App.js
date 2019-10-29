@@ -41,6 +41,18 @@ $(document).ready(function(){
     var watch_6=$("input[name=watch6]:checked").val();
     var watch_7=$("input[name=watch7]:checked").val();
     var watch_8=$("input[name=watch8]:checked").val();
+    var watch_9=$("input[name=watch9]:checked").val();
+    var watch_10=$("input[name=watch10]:checked").val();
+    var watch_11=$("input[name=watch11]:checked").val();
+    var watch_12=$("input[name=watch12]:checked").val();
+    var watch_13=$("input[name=watch13]:checked").val();
+    var watch_14=$("input[name=watch14]:checked").val();
+    var watch_15=$("input[name=watch15]:checked").val();
+    var watch_16=$("input[name=watch16]:checked").val();
+    var watch_17=$("input[name=watch17]:checked").val();
+    var watch_18=$("input[name=watch18]:checked").val();
+    var watch_19=$("input[name=watch19]:checked").val();
+    var watch_20=$("input[name=watch20]:checked").val();
 
     var q1 =document.getElementById('quantity1').value;
     var q2 =document.getElementById('quantity2').value;
@@ -63,12 +75,25 @@ $(document).ready(function(){
     var q18 =document.getElementById('quantity18').value;
     var q19 =document.getElementById('quantity19').value;
     var q20=document.getElementById('quantity20').value;
+    var q21=document.getElementById('quantity21').value;
+    var q22=document.getElementById('quantity22').value;
+    var q23=document.getElementById('quantity23').value;
+    var q24=document.getElementById('quantity24').value;
+    var q25=document.getElementById('quantity25').value;
+    var q26=document.getElementById('quantity26').value;
+    var q27=document.getElementById('quantity27').value;
+    var q28=document.getElementById('quantity28').value;
+    var q29=document.getElementById('quantity29').value;
+    var q30=document.getElementById('quantity30').value;
+    var q31=document.getElementById('quantity31').value;
+    var q32=document.getElementById('quantity32').value;
+
 
     //shoes/
-    items=[_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,watch_1,watch_2,watch_3,watch_4,watch_5,watch_6,watch_7,watch_8,];
-    quantity=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20];
-    values =[2500,3500,2500,3000,2500,4500,4500,4500,3500,3500,2500,4500,300,300,300,300,300,300,300,300];
-    type=["green Air Max","Green-700s","Green-White Airmax 3","Black Nike","Yellow-Blue Airmax","Red Spring blades","Yellow FIla","White FIla","Blue Sneakers","Black Spring Blades","Brown official","Yellow Fila", "Ongine black","Gucci golden face","Gucci mate black","Red wrist watch","Blue wrist watch","Mateblack-hectagon-face wrist watch","Purple-hectagon-face wrist watch","Cream-white-hectagon-face wrist watch"];
+    items=[_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,watch_1,watch_2,watch_3,watch_4,watch_5,watch_6,watch_7,watch_8,watch_9,watch_10,watch_11,watch_12,watch_13,watch_14,watch_15,watch_16,watch_17,watch_18,watch_19,watch_20];
+    quantity=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29,q30,q31,q32];
+    values =[2500,3500,2500,3000,2500,4500,4500,4500,3500,3500,2500,4500,300,300,300,300,300,300,300,300,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200];
+    type=["green Air Max","Green-700s","Green-White Airmax 3","Black Nike","Yellow-Blue Airmax","Red Spring blades","Yellow FIla","White FIla","Blue Sneakers","Black Spring Blades","Brown official","Yellow Fila", "Ongine black","Gucci golden face","Gucci mate black","Red wrist watch","Blue wrist watch","Mateblack-hectagon-face wrist watch","Purple-hectagon-face wrist watch","Cream-white-hectagon-face wrist watch","Black Rolex","Golden-face-ring patek Philipe","Silver-face-ring patek Philipe","Golden face-ring patek Philipe with brown stripes","Golden face-Rolex","Gucci-face watch","Golden face-Rolex starred","Rolex 24K golf-face","Omega","Silver-face patek philipe","Rolex-white face-brown laces","Rolex-white face-black laces"];
     totalValues=[];
     totalValues.length=0;
     //
@@ -85,7 +110,7 @@ $(document).ready(function(){
         }
       }
 
-      for (var j = 0; j <= 19; j++) {
+      for (var j = 0; j <= 31; j++) {
         if (values[j] == items[j]) {
           price += parseInt(values[j]*quantity[j]);
           order.push("sh" + price);
