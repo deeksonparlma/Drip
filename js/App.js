@@ -98,7 +98,7 @@ $(document).ready(function(){
         var message = orderType.toString() +" "+"worth "+ " "+"Ksh"+". "+price +" "+ "to be delivered at"+" " +location;
         console.log(message);
         // alert(message);
-        window.location.href ='mailto: javanmega0@gmail.com,dickson.nyaigoti@gmail.com ?subject=DripSchool Order &body=I have purchased '+ message;
+        window.location.href ='mailto: javanmega0@gmail.com,ck.caleb17@gmail.com,dickson.nyaigoti@gmail.com ?subject=DripSchool Order &body=I have purchased '+ message;
         price = 0;
         orderType.length= 0;
         increment = 0;
