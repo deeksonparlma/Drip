@@ -12,7 +12,8 @@ $(document).ready(function(){
 
   $("#shoesDisplay").click(function(){
     $(".4").show();
-    $("#watches").hide();
+    // $("#watches").hide();
+    alert("Coming soon");
   });
 
   // alert("work");
@@ -21,18 +22,18 @@ $(document).ready(function(){
     var l = document.getElementById("location");
     var location = l.options[l.selectedIndex].value;
 
-    var _1=$("input[name=shoe1]:checked").val();
-    var _2=$("input[name=shoe2]:checked").val();
-    var _3=$("input[name=shoe3]:checked").val();
-    var _4=$("input[name=shoe4]:checked").val();
-    var _5=$("input[name=shoe5]:checked").val();
-    var _6=$("input[name=shoe6]:checked").val();
-    var _7=$("input[name=shoe7]:checked").val();
-    var _8=$("input[name=shoe8]:checked").val();
-    var _9=$("input[name=shoe9]:checked").val();
-    var _10=$("input[name=shoe10]:checked").val();
-    var _11=$("input[name=shoe11]:checked").val();
-    var _12=$("input[name=shoe12]:checked").val();
+    // var _1=$("input[name=shoe1]:checked").val();
+    // var _2=$("input[name=shoe2]:checked").val();
+    // var _3=$("input[name=shoe3]:checked").val();
+    // var _4=$("input[name=shoe4]:checked").val();
+    // var _5=$("input[name=shoe5]:checked").val();
+    // var _6=$("input[name=shoe6]:checked").val();
+    // var _7=$("input[name=shoe7]:checked").val();
+    // var _8=$("input[name=shoe8]:checked").val();
+    // var _9=$("input[name=shoe9]:checked").val();
+    // var _10=$("input[name=shoe10]:checked").val();
+    // var _11=$("input[name=shoe11]:checked").val();
+    // var _12=$("input[name=shoe12]:checked").val();
     var watch_1=$("input[name=watch1]:checked").val();
     var watch_2=$("input[name=watch2]:checked").val();
     var watch_3=$("input[name=watch3]:checked").val();
@@ -54,18 +55,18 @@ $(document).ready(function(){
     var watch_19=$("input[name=watch19]:checked").val();
     var watch_20=$("input[name=watch20]:checked").val();
 
-    var q1 =document.getElementById('quantity1').value;
-    var q2 =document.getElementById('quantity2').value;
-    var q3 =document.getElementById('quantity3').value;
-    var q4 =document.getElementById('quantity4').value;
-    var q5 =document.getElementById('quantity5').value;
-    var q6 =document.getElementById('quantity6').value;
-    var q7 =document.getElementById('quantity7').value;
-    var q8 =document.getElementById('quantity8').value;
-    var q9 =document.getElementById('quantity9').value;
-    var q10 =document.getElementById('quantity10').value;
-    var q11 =document.getElementById('quantity11').value;
-    var q12 =document.getElementById('quantity12').value;
+    // var q1 =document.getElementById('quantity1').value;
+    // var q2 =document.getElementById('quantity2').value;
+    // var q3 =document.getElementById('quantity3').value;
+    // var q4 =document.getElementById('quantity4').value;
+    // var q5 =document.getElementById('quantity5').value;
+    // var q6 =document.getElementById('quantity6').value;
+    // var q7 =document.getElementById('quantity7').value;
+    // var q8 =document.getElementById('quantity8').value;
+    // var q9 =document.getElementById('quantity9').value;
+    // var q10 =document.getElementById('quantity10').value;
+    // var q11 =document.getElementById('quantity11').value;
+    // var q12 =document.getElementById('quantity12').value;
 
     var q13 =document.getElementById('quantity13').value;
     var q14 =document.getElementById('quantity14').value;
@@ -90,10 +91,10 @@ $(document).ready(function(){
 
 
     //shoes/
-    items=[_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,watch_1,watch_2,watch_3,watch_4,watch_5,watch_6,watch_7,watch_8,watch_9,watch_10,watch_11,watch_12,watch_13,watch_14,watch_15,watch_16,watch_17,watch_18,watch_19,watch_20];
-    quantity=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29,q30,q31,q32];
-    values =[2500,3500,2500,3000,2500,4500,4500,4500,3500,3500,2500,4500,300,300,300,300,300,300,300,300,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200];
-    type=["green Air Max","Green-700s","Green-White Airmax 3","Black Nike","Yellow-Blue Airmax","Red Spring blades","Yellow FIla","White FIla","Blue Sneakers","Black Spring Blades","Brown official","Yellow Fila", "Ongine black","Gucci golden face","Gucci mate black","Red wrist watch","Blue wrist watch","Mateblack-hectagon-face wrist watch","Purple-hectagon-face wrist watch","Cream-white-hectagon-face wrist watch","Black Rolex","Golden-face-ring patek Philipe","Silver-face-ring patek Philipe","Golden face-ring patek Philipe with brown stripes","Golden face-Rolex","Gucci-face watch","Golden face-Rolex starred","Rolex 24K golf-face","Omega","Silver-face patek philipe","Rolex-white face-brown laces","Rolex-white face-black laces"];
+    items=[watch_1,watch_2,watch_3,watch_4,watch_5,watch_6,watch_7,watch_8,watch_9,watch_10,watch_11,watch_12,watch_13,watch_14,watch_15,watch_16,watch_17,watch_18,watch_19,watch_20];
+    quantity=[q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29,q30,q31,q32];
+    values =[300,300,300,300,300,300,300,300,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200,1200];
+    type=["Ongine black","Gucci golden face","Gucci mate black","Red wrist watch","Blue wrist watch","Mateblack-hectagon-face wrist watch","Purple-hectagon-face wrist watch","Cream-white-hectagon-face wrist watch","Black Rolex","Golden-face-ring patek Philipe","Silver-face-ring patek Philipe","Golden face-ring patek Philipe with brown stripes","Golden face-Rolex","Gucci-face watch","Golden face-Rolex starred","Rolex 24K golf-face","Omega","Silver-face patek philipe","Rolex-white face-brown laces","Rolex-white face-black laces"];
     totalValues=[];
     totalValues.length=0;
     //
@@ -110,7 +111,7 @@ $(document).ready(function(){
         }
       }
 
-      for (var j = 0; j <= 31; j++) {
+      for (var j = 0; j <= 19; j++) {
         if (values[j] == items[j]) {
           price += parseInt(values[j]*quantity[j]);
           order.push("sh" + price);
